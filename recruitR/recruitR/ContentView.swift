@@ -199,79 +199,81 @@ struct candidateInfoView: View {
     }
     
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                
-                Button("Done") {
-                    dismiss()
-                }
-                .padding(.horizontal)
-            }
-            
+        ScrollView {
             VStack {
-                Image(card.imageName)
-                    .resizable()
-                    .clipShape(Circle())
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 125, height: 125)
-                
-                Text(card.name).font(.largeTitle).bold()
-                Text(card.bio)
-                
-                Divider()
-                
-                Group {
-                    HStack {
-                        Text("Bio")
-                            .foregroundColor(Color.gray)
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    .padding(.top)
+                HStack {
+                    Spacer()
                     
-                    HStack {
-                        Text(card.longBio)
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    
-                    Divider()
-                    
-                    HStack {
-                        Text("Why are you interested?")
-                            .foregroundColor(Color.gray)
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    .padding(.top)
-                    
-                    HStack {
-                        Text("It's my passion to help others")
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    
-                    Divider()
-                    
-                    HStack {
-                        Text("Resume/CV")
-                            .foregroundColor(Color.gray)
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    .padding(.top)
-                    
-                    HStack {
-                        Text("resume.pdf")
-                        Spacer()
+                    Button("Done") {
+                        dismiss()
                     }
                     .padding(.horizontal)
                 }
+                
+                VStack {
+                    Image(card.imageName)
+                        .resizable()
+                        .clipShape(Circle())
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 125, height: 125)
+                    
+                    Text(card.name).font(.largeTitle).bold()
+                    Text(card.bio)
+                    
+                    Divider()
+                    
+                    Group {
+                        HStack {
+                            Text("Bio")
+                                .foregroundColor(Color.gray)
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        .padding(.top)
+                        
+                        HStack {
+                            Text(card.longBio)
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        
+                        Divider()
+                        
+                        HStack {
+                            Text("Why are you interested?")
+                                .foregroundColor(Color.gray)
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        .padding(.top)
+                        
+                        HStack {
+                            Text("It's my passion to help others")
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        
+                        Divider()
+                        
+                        HStack {
+                            Text("Resume/CV")
+                                .foregroundColor(Color.gray)
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        .padding(.top)
+                        
+                        HStack {
+                            Text("resume.pdf")
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                    }
+                }
+                Spacer()
             }
-            Spacer()
+            .padding()
         }
-        .padding()
     }
 }
 
@@ -280,71 +282,73 @@ struct candidateReviewInfoView: View {
     @State var card: Card
     
     var body: some View {
-        VStack {
-            
+        ScrollView {
             VStack {
-                Image(card.imageName)
-                    .resizable()
-                    .clipShape(Circle())
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 125, height: 125)
                 
-                Text(card.name).font(.largeTitle).bold()
-                Text(card.bio)
-                
-                Divider()
-                
-                Group {
-                    HStack {
-                        Text("Bio")
-                            .foregroundColor(Color.gray)
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    .padding(.top)
+                VStack {
+                    Image(card.imageName)
+                        .resizable()
+                        .clipShape(Circle())
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 125, height: 125)
                     
-                    HStack {
-                        Text(card.longBio)
-                        Spacer()
-                    }
-                    .padding(.horizontal)
+                    Text(card.name).font(.largeTitle).bold()
+                    Text(card.bio)
                     
                     Divider()
                     
-                    HStack {
-                        Text("Why are you interested?")
-                            .foregroundColor(Color.gray)
-                        Spacer()
+                    Group {
+                        HStack {
+                            Text("Bio")
+                                .foregroundColor(Color.gray)
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        .padding(.top)
+                        
+                        HStack {
+                            Text(card.longBio)
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        
+                        Divider()
+                        
+                        HStack {
+                            Text("Why are you interested?")
+                                .foregroundColor(Color.gray)
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        .padding(.top)
+                        
+                        HStack {
+                            Text("It's my passion to help others")
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        
+                        Divider()
+                        
+                        HStack {
+                            Text("Resume/CV")
+                                .foregroundColor(Color.gray)
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        .padding(.top)
+                        
+                        HStack {
+                            Text("resume.pdf")
+                            Spacer()
+                        }
+                        .padding(.horizontal)
                     }
-                    .padding(.horizontal)
-                    .padding(.top)
-                    
-                    HStack {
-                        Text("It's my passion to help others")
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    
-                    Divider()
-                    
-                    HStack {
-                        Text("Resume/CV")
-                            .foregroundColor(Color.gray)
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    .padding(.top)
-                    
-                    HStack {
-                        Text("resume.pdf")
-                        Spacer()
-                    }
-                    .padding(.horizontal)
                 }
+                Spacer()
             }
-            Spacer()
+            .padding()
         }
-        .padding()
     }
 }
 
