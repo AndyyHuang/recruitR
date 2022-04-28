@@ -14,6 +14,7 @@ struct Card: Identifiable {
     let imageName: String
     let age: Int
     let bio: String
+    let longBio: String
     
     // Card x position
     var x: CGFloat = 0.0
@@ -22,14 +23,14 @@ struct Card: Identifiable {
     // Card rotation angle
     var degree: Double = 0.0
     
-    static var data: [Card] {
+    // Dummy Data
+    static var data: [Card] =
         [
-            Card(name: "Ashley", imageName: "p0", age: 21, bio: "follow me on instagram!"),
-            Card(name: "Rick", imageName: "p1", age: 24, bio: "looking for friends"),
-            Card(name: "Bob", imageName: "p2", age: 35, bio: "currently maidenless"),
-            Card(name: "Alice", imageName: "p3", age: 67, bio: "an old dog can still learn new tricks"),
-            Card(name: "Eve", imageName: "p4", age: 41, bio: "looking for my adam"),
+            Card(name: "Ashley", imageName: "p0", age: 21, bio: "follow me on instagram!", longBio: "this is a long bio"),
+            Card(name: "Rick", imageName: "p1", age: 24, bio: "looking for friends", longBio: "this is a long bio"),
+            Card(name: "Bob", imageName: "p2", age: 35, bio: "currently maidenless", longBio: "this is a long bio"),
+            Card(name: "Alice", imageName: "p3", age: 67, bio: "an old dog can still learn new tricks", longBio: "this is a long bio"),
+            Card(name: "Eve", imageName: "p4", age: 41, bio: "looking for my adam", longBio: "this is a long bio")
         ]
-    }
-    
+
 }
