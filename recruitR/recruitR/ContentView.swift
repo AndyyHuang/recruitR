@@ -22,7 +22,7 @@ struct ContentView: View {
             VStack {
                 // Top Stack
                 HStack {
-                    Button(action: {}) {
+                    NavigationLink(destination: ProfileView()) {
                         Image("user")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -32,7 +32,7 @@ struct ContentView: View {
                     Spacer()
                     
                     Button(action: {}) {
-                        Image("logo")
+                        Image("niceLogo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 45)
@@ -442,6 +442,110 @@ struct cardView: View {
         .onTapGesture {
             showingCandidateInfo.toggle()
         }
+        
+    }
+}
+
+// Profile View
+struct ProfileView: View {
+    
+    var firstName: String = "Rahul"
+    var lastName: String = "Roy"
+    
+    var body: some View {
+        ScrollView {
+            VStack {
+                VStack {
+                    Image("rahul")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 120, height: 120)
+                        .clipShape(Circle())
+                    
+                    Text(firstName)
+                        .font(.title)
+                        .bold()
+                    
+                    Text("President of Berkeley Consulting")
+                        .font(.body)
+                }
+                
+                
+                Divider()
+                
+                VStack {
+                    Text("About")
+                        .font(.title)
+                        .bold()
+                        .foregroundColor(.red)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding([.leading, .bottom], 10)
+                    
+                    Text("Full Name")
+                        .font(.body)
+                        .foregroundColor(.gray)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding([.leading, .bottom], 10)
+                    
+                    Text(firstName  + " " + lastName)
+                        .font(.body)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding([.leading, .bottom], 10)
+                    
+                    Divider()
+                    
+                    Text("Email")
+                        .font(.body)
+                        .foregroundColor(.gray)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding([.leading, .bottom], 10)
+                    
+                    Text("rahul1988@gmail.com")
+                        .font(.body)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding([.leading, .bottom], 10)
+                    
+                    Divider()
+                    
+                    HStack {
+                        VStack {
+                            Text("Applications Received")
+                                .font(.body)
+                                .foregroundColor(.gray)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding([.leading, .bottom], 10)
+                            
+                            Text("36")
+                                .font(.body)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding([.leading, .bottom], 10)
+                        }
+                        
+                        VStack {
+                            Text("Candidates")
+                                .font(.body)
+                                .foregroundColor(.gray)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding([.leading, .bottom], 10)
+                            
+                            Text("12")
+                                .font(.body)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding([.leading, .bottom], 10)
+                        }
+                    }
+                    
+                    Divider()
+                    
+                    Text("Social URL")
+                        .font(.body)
+                        .foregroundColor(.gray)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding([.leading, .bottom], 10)
+                }
+            }
+        }
+        .navigationBarTitle("Profile")
         
     }
 }
