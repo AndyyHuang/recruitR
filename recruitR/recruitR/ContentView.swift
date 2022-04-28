@@ -117,14 +117,14 @@ struct ReviewView: View {
             LikedCandidatesView(likedCandidates: likedCandidates)
                 .id(1)
                 .tabItem {
-                    Label("Liked", systemImage: "list.dash")
+                    Label("Liked", systemImage: "heart")
                 }
                 .tag("liked")
             
             DislikedCandidatesView(dislikedCandidates: dislikedCandidates)
                 .id(2)
                 .tabItem {
-                    Label("Disliked", systemImage: "list.dash")
+                    Label("Disliked", systemImage: "x.circle")
                 }
                 .tag("disliked")
         }
