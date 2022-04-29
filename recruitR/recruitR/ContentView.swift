@@ -23,7 +23,7 @@ struct ContentView: View {
                 // Top Stack
                 HStack {
                     NavigationLink(destination: ProfileView()) {
-                        Image("user")
+                        Image("profile")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 45)
@@ -41,7 +41,7 @@ struct ContentView: View {
                     Spacer()
                     
                     NavigationLink(destination: ReviewView(dislikedCandidates: dislikedCandidates, likedCandidates: likedCandidates)) {
-                        Image("note")
+                        Image("list")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 45)
@@ -73,22 +73,22 @@ struct ContentView: View {
                 HStack(spacing: 0) {
                     
                     Button(action: {}) {
-                        Image("dislike")
+                        Image("remove")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 45)
                     }
                     
                     Button(action: {}) {
-                        Image("love")
+                        Image("heart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(height: 45)
+                            .frame(height: 60)
                     }
                     .padding(.horizontal, 50)
                     
                     Button(action: {}) {
-                        Image("like")
+                        Image("check")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 45)

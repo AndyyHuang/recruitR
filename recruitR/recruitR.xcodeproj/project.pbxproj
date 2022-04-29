@@ -12,6 +12,7 @@
 		974B7B2928162FB0008C59AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 974B7B2828162FB0008C59AF /* Assets.xcassets */; };
 		974B7B2C28162FB0008C59AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 974B7B2B28162FB0008C59AF /* Preview Assets.xcassets */; };
 		974B7B3328162FFE008C59AF /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974B7B3228162FFE008C59AF /* card.swift */; };
+		97C2CC66281B653000102D17 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C2CC65281B653000102D17 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		974B7B2828162FB0008C59AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		974B7B2B28162FB0008C59AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		974B7B3228162FFE008C59AF /* card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card.swift; sourceTree = "<group>"; };
+		97C2CC64281B5DDC00102D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		97C2CC65281B653000102D17 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +56,11 @@
 		974B7B2328162FAF008C59AF /* recruitR */ = {
 			isa = PBXGroup;
 			children = (
+				97C2CC64281B5DDC00102D17 /* Info.plist */,
 				974B7B3228162FFE008C59AF /* card.swift */,
 				974B7B2428162FAF008C59AF /* recruitRApp.swift */,
 				974B7B2628162FAF008C59AF /* ContentView.swift */,
+				97C2CC65281B653000102D17 /* LoginView.swift */,
 				974B7B2828162FB0008C59AF /* Assets.xcassets */,
 				974B7B2A28162FB0008C59AF /* Preview Content */,
 			);
@@ -142,6 +147,7 @@
 			files = (
 				974B7B3328162FFE008C59AF /* card.swift in Sources */,
 				974B7B2728162FAF008C59AF /* ContentView.swift in Sources */,
+				97C2CC66281B653000102D17 /* LoginView.swift in Sources */,
 				974B7B2528162FAF008C59AF /* recruitRApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,9 +281,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"recruitR/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = recruitR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,9 +309,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"recruitR/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = recruitR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
