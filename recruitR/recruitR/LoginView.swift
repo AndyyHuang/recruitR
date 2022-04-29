@@ -34,14 +34,14 @@ struct LoginScreen: View {
                 .padding(.bottom, 100)
             
             Text("Username")
-                .padding(.trailing, 175)
+                .padding(.trailing, 200)
             TextField("Enter username...", text: $username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.horizontal, 50)
             
             Text("Password")
                 .padding(.top)
-                .padding(.trailing, 175)
+                .padding(.trailing, 200)
             SecureField("Enter password...", text: $password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.horizontal, 50)
