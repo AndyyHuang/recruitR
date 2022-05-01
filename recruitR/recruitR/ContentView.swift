@@ -248,26 +248,60 @@ struct candidateInfoView: View {
                         .padding(.top)
                         
                         HStack {
-                            Text("It's my passion to help others")
+                            Text(card.interest)
                             Spacer()
                         }
                         .padding(.horizontal)
                         
                         Divider()
                         
-                        HStack {
-                            Text("Resume/CV")
-                                .foregroundColor(Color.gray)
-                            Spacer()
+                        Group {
+                            HStack {
+                                Text("Year")
+                                    .foregroundColor(Color.gray)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                            .padding(.top)
+                            
+                            HStack {
+                                Text(card.year)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                            
+                            Divider()
+                            
+                            HStack {
+                                Text("Major")
+                                    .foregroundColor(Color.gray)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                            .padding(.top)
+                            
+                            HStack {
+                                Text(card.major)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                            
+                            Divider()
+                            
+                            HStack {
+                                Text("Resume/CV")
+                                    .foregroundColor(Color.gray)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                            .padding(.top)
+                            
+                            HStack {
+                                Text("resume.pdf")
+                                Spacer()
+                            }
+                            .padding(.horizontal)
                         }
-                        .padding(.horizontal)
-                        .padding(.top)
-                        
-                        HStack {
-                            Text("resume.pdf")
-                            Spacer()
-                        }
-                        .padding(.horizontal)
                     }
                 }
                 Spacer()
@@ -323,27 +357,63 @@ struct candidateReviewInfoView: View {
                         .padding(.top)
                         
                         HStack {
-                            Text("It's my passion to help others")
+                            Text(card.interest)
                             Spacer()
                         }
                         .padding(.horizontal)
                         
                         Divider()
-                        
-                        HStack {
-                            Text("Resume/CV")
-                                .foregroundColor(Color.gray)
-                            Spacer()
+                        Group {
+                            HStack {
+                                Text("Year")
+                                    .foregroundColor(Color.gray)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                            .padding(.top)
+                            
+                            HStack {
+                                Text(card.year)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                            
+                            Divider()
+                            
+                            HStack {
+                                Text("Major")
+                                    .foregroundColor(Color.gray)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                            .padding(.top)
+                            
+                            HStack {
+                                Text(card.major)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                            
+                            Divider()
+                            
+                            HStack {
+                                Text("Resume/CV")
+                                    .foregroundColor(Color.gray)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                            .padding(.top)
+                            
+                            HStack {
+                                Text("resume.pdf")
+                                Spacer()
+                            }
+                            .padding(.horizontal)
                         }
-                        .padding(.horizontal)
-                        .padding(.top)
-                        
-                        HStack {
-                            Text("resume.pdf")
-                            Spacer()
-                        }
-                        .padding(.horizontal)
                     }
+                    
+                    
+                    
                 }
                 Spacer()
             }
